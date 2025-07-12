@@ -262,7 +262,7 @@ const Home = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className='w-full h-48 object-cover rounded-lg mb-4'
+                  className='w-full h-40 sm:h-48 min-h-40 sm:min-h-48 object-cover rounded-lg mb-3 sm:mb-4'
                 />
                 <h3 className='text-xl font-semibold text-secondary-900 dark:text-white mb-2'>
                   {product.name}
