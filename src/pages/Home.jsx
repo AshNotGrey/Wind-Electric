@@ -131,18 +131,18 @@ const Home = () => {
         <div className='absolute inset-0 hero-gradient opacity-90 z-10'></div>
         <div className='absolute inset-0 bg-gradient-to-br from-primary-900/20 to-accent-900/20 z-10'></div>
 
-        <div className='relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+        <div className='relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
-            <div className='text-left'>
-              <h1 className='hero-title text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight'>
+            <div className='text-center lg:text-left max-w-xl mx-auto lg:mx-0'>
+              <h1 className='hero-title text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight'>
                 Power Your Future with
                 <span className='text-accent-300'> Wind Energy</span>
               </h1>
-              <p className='hero-subtitle text-xl text-primary-100 mb-8 max-w-lg'>
+              <p className='hero-subtitle text-xl text-primary-100 mb-8 max-w-lg mx-auto lg:mx-0 text-center lg:text-left'>
                 Revolutionary wind turbine technology that generates clean, reliable electricity for
                 your home or business. Join the renewable energy revolution today.
               </p>
-              <div className='hero-cta flex flex-col sm:flex-row gap-4'>
+              <div className='hero-cta flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
                 <Link to='/products' className='btn-primary text-lg px-8 py-4'>
                   Explore Products
                   <ArrowRight className='ml-2 h-5 w-5' />
@@ -153,18 +153,15 @@ const Home = () => {
                 </button>
               </div>
             </div>
-
-            <div className='hero-image z-20'>
+            <div className='hero-image z-20 flex justify-center'>
               <img
                 src='/images/Main Wind Turbine.jpg'
                 alt='Wind turbine generating clean energy'
-                className='w-full h-auto rounded-2xl shadow-strong opacity-100'
-                style={{ opacity: 1, transform: "scale(1)" }}
+                className='max-w-md w-full h-auto rounded-2xl shadow-strong opacity-100 hidden md:block'
               />
             </div>
           </div>
         </div>
-
         {/* Scroll indicator */}
         <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle z-30'>
           <div className='w-6 h-10 border-2 border-white rounded-full flex justify-center'>
